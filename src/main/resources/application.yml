@@ -1,0 +1,22 @@
+app:
+  datasource:
+    sqlserver:
+      jdbc-url: jdbc:sqlserver://localhost:1433;databaseName=WMS
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      username: mon2
+      password: admin
+    mysql:
+      jdbc-url: jdbc:mysql://localhost:5001/s_ems?useSSL=false&autoReconnect=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      driverClassName: com.mysql.cj.jdbc.Driver
+      username: root
+      password: poi-t#admin
+    zprn: # 中鹏热能
+      jdbc-url: jdbc:mysql://localhost:3306/jtemdata?useSSL=false&autoReconnect=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      driverClassName: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 
+
+logging:
+  level:
+    dev.ewin.multids.mapper: debug
+    org.springframework.jdbc.core: debug
